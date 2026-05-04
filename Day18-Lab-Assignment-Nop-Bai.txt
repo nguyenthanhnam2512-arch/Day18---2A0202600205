@@ -1,0 +1,50 @@
+DAY 18 — TRACK 1 — LAB ASSIGNMENT (BÀI NỘP)
+
+Học viên: Nguyễn Thành Nam — MSSV: 2A202600205
+Ngày nộp: 04/05/2026
+
+────────────────────────────────
+1) LINK / FILE MÔ HÌNH TÀI CHÍNH
+────────────────────────────────
+• File đính kèm: Day18-AI-Product-Finance-Model (1).xlsx (3 tab: Assumptions, Unit Economics, P&L & ROI).
+• Kịch bản phân tích chính: Base (đã chọn tại Tab 3 — ô “Chọn scenario: Base”).
+
+────────────────────────────────
+2) TÓM TẮT GIẢ ĐỊNH CHÍNH (BASE)
+────────────────────────────────
+• ARPU: 600.000 VND/khách/tháng
+• Adoption rate: 0,6%/tháng (của TAM); TAM: 50.000 khách tiềm năng
+• COGS biến đổi ~240.000 VND/khách/tháng (API + hidden + infra)
+• Churn: 5%/tháng → thời gian ở lại trung bình ~20 tháng
+• CAC: 1.500.000 VND/khách mới
+• Fixed cost: 200.000.000 VND/tháng
+• Vốn đầu tư ban đầu (MVP): 500.000.000 VND; tiền mặt ban đầu: 3.000.000.000 VND
+• Chiết khấu (WACC): 20%/năm
+
+────────────────────────────────
+3) UNIT ECONOMICS (BASE)
+────────────────────────────────
+• Gross margin ~60%; LTV ≈ 7.200.000 VND/khách (vòng đời)
+• LTV/CAC ≈ 4,8x (mục tiêu tham chiếu > 3x)
+• CAC Payback ≈ 4,2 tháng (mục tiêu < 12 tháng)
+• Kết luận unit economics (Base): HEALTHY
+
+────────────────────────────────
+4) P&L & ROI — 24 THÁNG (BASE)
+────────────────────────────────
+• NPV ≈ 4.667 tỷ VND (dương → dự án tạo giá trị ròng theo chiết khấu đã giả định)
+• IRR (năm) ≈ 191% (>> WACC 20% trong mô hình)
+• Thời gian hoàn vốn dự án (Project Payback): ~15 tháng (< 24 tháng)
+• Runway: đủ vượt 24 tháng mô phỏng (cash tích lũy cuối kỳ dương lớn)
+• Quyết định mô hình (Final Verdict): GO — NPV dương và IRR > WACC
+
+────────────────────────────────
+5) GHI CHÚ QUYẾT ĐỊNH (ARPU & CAC — ĐÃ ĐIỀN TRONG TAB 1)
+────────────────────────────────
+Base ARPU 600k VND/tháng phản ánh gói Professional cho SMB (CS/automation); CAC 1,5M VND dựa trên chiến dịch paid + demo có quota sale. LTV/CAC ~4,8x và hoàn vốn CAC ~4,2 tháng chứng minh unit economics lành mạnh — phù hợp pitch nhà đầu tư early-stage.
+
+────────────────────────────────
+6) HẠN CHẾ / LƯU Ý
+────────────────────────────────
+• Mô hình phụ thuộc giả định adoption cố định và marketing cố định/tháng; cần cập nhật số liệu thực tế khi chạy pilot.
+• Nên đối chiếu Pessimistic để xem điểm gãy (LTV/CAC < 1 khi churn cao / CAC cao).
